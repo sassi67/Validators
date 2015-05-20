@@ -9,6 +9,7 @@ class ValidatorDouble : public Validator
     Q_OBJECT
 public:
     ValidatorDouble(double bottom, double top, int decimals, QObject *parent=0);
+    ValidatorDouble(double bottom, double top, int decimals, QDoubleValidator::Notation notation, QObject *parent=0);
 
 protected:
     virtual QValidator::State validateThis(QString &s, int &pos) const;

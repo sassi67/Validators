@@ -2,14 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QValidator>
 
-class QLineEdit;
-class QDoubleValidator;
-class ValidatorDouble;
-class Validator;
 class QVBoxLayout;
-
+class LineEditInt;
+class LineEditDouble;
+class LineEditString;
 
 namespace Ui {
 class MainWindow;
@@ -26,16 +23,11 @@ public:
 private:
     Ui::MainWindow *ui;
 
-    QVBoxLayout *lay_;
-    QLineEdit      *editInt_;
-    QLineEdit      *editDouble_;
-    QLineEdit      *editString_;
-    Validator       *validatorInt_;
-    Validator       *validatorDouble_;
-    Validator       *validatorString_;
+    QVBoxLayout     *lay_;
+    LineEditInt     *editInt_;
+    LineEditDouble  *editDouble_;
+    LineEditString  *editString_;
 
-private slots:
-    void onStateChanged(QValidator::State s);
 };
 
 #endif // MAINWINDOW_H

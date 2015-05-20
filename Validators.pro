@@ -17,12 +17,20 @@ SOURCES += main.cpp\
     validator.cpp \
     validatordouble.cpp \
     validatorint.cpp \
-    validatorstring.cpp
+    validatorstring.cpp \
+    lineeditvalidate.cpp \
+    lineeditint.cpp \
+    lineeditdouble.cpp \
+    lineeditstring.cpp
 
 HEADERS  += mainwindow.h \
     validator.h \
     validatordouble.h \
     validatorint.h \
-    validatorstring.h
+    validatorstring.h \
+    lineeditvalidate.h \
+    lineeditint.h \
+    lineeditdouble.h \
+    lineeditstring.h
 
 FORMS    += mainwindow.ui
