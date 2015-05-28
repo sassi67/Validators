@@ -3,9 +3,7 @@
 
 #include <QMainWindow>
 
-class QHBoxLayout;
-class QLabel;
-class QVBoxLayout;
+class QFormLayout;
 class LineEditInt;
 class LineEditDouble;
 class LineEditString;
@@ -25,17 +23,11 @@ public:
 private:
     Ui::MainWindow *ui;
 
-    QVBoxLayout     *lay_;
-    QHBoxLayout     *layInt_;
-    QHBoxLayout     *layDouble_;
-    QHBoxLayout     *layString_;
+    QFormLayout     *frmLay_;
     LineEditInt     *editInt_;
     LineEditDouble  *editDouble_;
     LineEditString  *editString_;
-    QLabel          *labInt_;
-    QLabel          *labDouble_;
-    QLabel          *labString_;
-
+    LineEditString  *editScientific_;
 };
 
 #endif // MAINWINDOW_H
