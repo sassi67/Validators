@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     lineeditvalidate.cpp \
     lineeditint.cpp \
     lineeditdouble.cpp \
-    lineeditstring.cpp
+    lineeditstring.cpp \
+    validatorintexclude.cpp
 
 HEADERS  += mainwindow.h \
     validator.h \
@@ -31,6 +32,7 @@ HEADERS  += mainwindow.h \
     lineeditvalidate.h \
     lineeditint.h \
     lineeditdouble.h \
-    lineeditstring.h
+    lineeditstring.h \
+    validatorintexclude.h
 
 FORMS    += mainwindow.ui

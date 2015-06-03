@@ -7,11 +7,13 @@
 
 #include "lineeditint.h"
 #include "validatorint.h"
+#include "validatorintexclude.h"
 
 LineEditInt::LineEditInt(int bottom, int top, QWidget *parent):
     LineEditValidate(parent)
 {
-    validator_ = new ValidatorInt(bottom, top, parent);
+    //validator_ = new ValidatorInt(bottom, top, parent);
+    validator_ = new ValidatorIntExclude(bottom, top, parent);
     this->setValidator(validator_);
     connect(validator_, SIGNAL(stateChanged(QValidator::State)), this, SLOT(onStateChanged(QValidator::State)));
 }

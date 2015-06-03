@@ -28,6 +28,8 @@ private:
     LineEditDouble  *editDouble_;
     LineEditString  *editString_;
     LineEditString  *editScientific_;
+    LineEditInt     *editIntExclude_;
+
 };
 
 #endif // MAINWINDOW_H

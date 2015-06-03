@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
     frmLay_(new QFormLayout(this)),
-    editInt_(new LineEditInt(-1, 1000,  this)),
+    editInt_(new LineEditInt(-10, 1000,  this)),
     editDouble_(new LineEditDouble(-0.05, 2000.0, 2, this)),
     editString_(new LineEditString(QRegExp("(once|[1-9]\\d{,2})"), this)),
     editScientific_(new LineEditString(QRegExp("(\\+|\\-)?(?:0|[1-9]\\d*)(?:\\.\\d*)?(?:[eE](\\+|\\-)?\\d+)?"), this))

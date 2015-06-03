@@ -6,10 +6,10 @@ class Validator : public QValidator
 {
     Q_OBJECT
 public:
+    virtual QValidator::State validate(QString &s, int &pos) const;
 
 protected:
     explicit Validator(QObject *parent=0);
-    virtual QValidator::State validate(QString &s, int &pos) const;
     virtual QValidator::State validateThis(QString &s, int &pos) const = 0;
 
     mutable  QValidator::State oldState_;
